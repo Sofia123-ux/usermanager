@@ -1,0 +1,62 @@
+#! /bin/bash
+create_user ()
+read -p "enter name user: " username 
+if id "Susername" &>/dev/nu11; then
+       echo "user $username is found"
+else   sudo useradd "Susername" 
+       sudo passwd "Susername"
+
+
+  fi
+
+}
+remove_user () {
+read -p "enter name user: " username
+if id "§username" &>/dev/null; then
+       sudo deluser -r "Susername" 
+       echo "user $username remowe"
+else
+       echo "user Susername not found"
+  fi
+
+}
+change_password() {
+       read -p "enter name user: " username 
+if id   "Susername" &>/dev/null; then 
+        sudo passwd "Susername"
+       echo "user username password change"
+else
+echo "user Susername not found"
+  fi
+}
+check user() ‹
+read
+-p "enter name user: " username if id "Susername" &>/dev/null; then
+while true; do
+
+
+echo "user manager"
+
+echo "1) create user"
+echo
+• "2) remove user"
+echo
+"3) change password"
+echo
+"4) check user"
+echo
+"5) exit"
+
+read -p "enter number (1-5): * action
+
+case faction in
+
+1) create user
+2) remove user
+3) change password ::
+4) check user :;
+5) echo "exit."; break ::
+
+
+esac
+*) echo "!!!ERROR NAMBER!!!, try again(("
